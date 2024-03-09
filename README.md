@@ -15,6 +15,8 @@ Die Anwendung ist dockerisiert und kann daher leicht auf jedem System via Docker
 
 `docker-compose up -d`
 
+Beachten Sie für ein lokales Deployment die Anpassung der in den env-Variablen eingetragenen Adressen zur Kommunikation der Container untereinander. (Normalerweise kommunizieren die Services über ihre öffentlich erreichbaren Internet-Addressen, um die Kommunikation über https zu verschlüsseln. Dies ist beim lokalen Deployment nicht möglich. Aus diesem Grund kann die Kommunikation nur über http erfolgen, weshalb es zu Einschränkungen seitens des genutzten Browsers kommen kann.)
+
 ## Verwendete Frameworks und Dienste
 
 Diese Anwendung nutzt verschiedene Frameworks und Dienste, um die Funktionalität zu implementieren und einen reibungslosen Betrieb sicherzustellen. Hier sind die Komponenten, die in diesem Projekt verwendet werden:
