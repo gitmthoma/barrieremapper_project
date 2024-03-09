@@ -23,20 +23,20 @@ Diese Anwendung nutzt verschiedene Frameworks und Dienste, um die Funktionalitä
 
 ### Frameworks:
 
-- [**PureCSS:**](https://github.com/pure-css) Eine Reihe von CSS-Modulen, die für das Erstellen von ansprechenden, reaktionsschnellen Webseiten verwendet werden können.
+- [**PureCSS:**](https://github.com/pure-css) 
   - Lizenz: BSD License, © 2013 Yahoo! Inc.
 
-- [**Leaflet:**](https://github.com/Leaflet) Ein Open-Source-JavaScript-Bibliothek zur Erstellung interaktiver Karten.
+- [**Leaflet:**](https://github.com/Leaflet) 
   - Lizenz: BSD 2-Clause License
             © 2010-2024, Volodymyr Agafonkin
             © 2010-2011, CloudMade
             All rights reserved.
 
-- [**FastAPI:**](https://github.com/tiangolo/fastapi/) Ein schnelles (High-performance), modernes Web-Framework für Python.
+- [**FastAPI:**](https://github.com/tiangolo/fastapi/) 
   - Lizenz: The MIT License (MIT)
             © 2018 Sebastián Ramírez
 
-- [**Express:**](https://github.com/expressjs/express) Ein beliebtes Webanwendungs-Framework für Node.js.
+- [**Express:**](https://github.com/expressjs/express) 
   - Lizenz: The MIT License (MIT)
             © 2009-2014 TJ Holowaychuk <tj@vision-media.ca>
             © 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>
@@ -44,7 +44,7 @@ Diese Anwendung nutzt verschiedene Frameworks und Dienste, um die Funktionalitä
 
 ### Dienste:
 
-- **Scorpio Context Broker:** Ein Kontextbroker, der im Backend verwendet wird, um Daten zu verarbeiten und das Model des MVC zu unterstützen.
+- **Scorpio Context Broker:** 
   - Website: [Link zur Scorpio Context Broker Website](https://github.com/ScorpioBroker/)
   - Lizenz: BSD 3-Clause License
             © 2021, NEC
