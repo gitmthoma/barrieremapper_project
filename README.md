@@ -1,4 +1,4 @@
-# Barrieremapper
+# Barriere/Mapper
 Barrieremapper ist eine dockerbasierte Webanwendung, die darauf abzielt, städtische Barrieren auf einer Karte zu markieren und karten- und listenbasiert anzeigen zu lassen. Weitere Informationen zum Kontext der Anwendung finden Sie via [BarriereMapper-Website](https://barrieremapper-website-mthoma-93714e67e93ba3dd4ff63482e1d96b185.pages.gitlab.rlp.net). Um zur Anwendung selbst zu gelangen, folgen Sie diesem Link: [BarriereMapper](https://pfaffnground.ddns.net). Zur API, über die eingetragene Barrieren im NGSI-LD-Format abgefragt werden können, gelangen Sie unter: [BarriereMapper-API](https://pfaffnground.ddns.net/controller_api/docs).
 
 Die Anwendung besteht aus drei Hauptkomponenten, die gemäß dem MVC-Muster jeweils in einem eigenen Verzeichnis organisiert sind: *barrieremapper_view*, *barrieremapper_controller* und *barrieremapper_model*.
