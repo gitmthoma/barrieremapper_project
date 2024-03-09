@@ -26,17 +26,17 @@ Diese Anwendung nutzt verschiedene Frameworks und Dienste, um die Funktionalitä
 1. [**PureCSS**](https://github.com/pure-css)
 - Lizenz: BSD License, © 2013 Yahoo! Inc.
 
-3. [**Leaflet**](https://github.com/Leaflet)
+2. [**Leaflet**](https://github.com/Leaflet)
 - Lizenz: BSD 2-Clause License  
          © 2010-2024, Volodymyr Agafonkin  
          © 2010-2011, CloudMade  
          All rights reserved.
 
-5. [**FastAPI**](https://github.com/tiangolo/fastapi/)
+3. [**FastAPI**](https://github.com/tiangolo/fastapi/)
 - Lizenz: The MIT License (MIT)  
          © 2018 Sebastián Ramírez
 
-7. [**Express**](https://github.com/expressjs/express) 
+4. [**Express**](https://github.com/expressjs/express) 
 - Lizenz: The MIT License (MIT)  
          © 2009-2014 TJ Holowaychuk <tj@vision-media.ca>  
          © 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>  
