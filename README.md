@@ -1,5 +1,5 @@
-# Barrieremapper
-Barrieremapper ist eine dockerbasierte Webanwendung, die darauf abzielt, städtische Barrieren auf einer Karte zu markieren und karten- und listenbasiert anzeigen zu lassen. Weitere Informationen zum Kontext der Anwendung finden Sie unter [BarriereMapper-Projekt](https://barrieremapper-project-mthoma-3bc62844e10abc09893286bb94ec3b485.pages.gitlab.rlp.net/). Um zur Anwendung selbst zu gelangen, folgen Sie diesem Link: [BarriereMapper](https://pfaffnground.ddns.net). Zur API, über die eingetragene Barrieren im NGSI-LD-Format abgefragt werden können, gelangen Sie unter: [BarriereMapper-API](https://pfaffnground.ddns.net/controller_api/docs).
+# BarriereMapper
+BarriereMapper ist eine dockerbasierte Webanwendung, die darauf abzielt, städtische Barrieren auf einer Karte zu markieren und karten- und listenbasiert anzeigen zu lassen. Weitere Informationen zum Kontext der Anwendung finden Sie via [BarriereMapper-Website](https://barrieremapper-website-mthoma-93714e67e93ba3dd4ff63482e1d96b185.pages.gitlab.rlp.net). Um zur Anwendung selbst zu gelangen, folgen Sie diesem Link: [BarriereMapper](https://pfaffnground.ddns.net). Zur API, über die eingetragene Barrieren im NGSI-LD-Format abgefragt werden können, gelangen Sie unter: [BarriereMapper-API](https://pfaffnground.ddns.net/controller_api/docs).
 
 Die Anwendung besteht aus drei Hauptkomponenten, die gemäß dem MVC-Muster jeweils in einem eigenen Verzeichnis organisiert sind: *barrieremapper_view*, *barrieremapper_controller* und *barrieremapper_model*.
 
@@ -23,40 +23,42 @@ Die Anwendung ist dockerisiert und kann daher leicht auf jedem System via Docker
 
 `docker-compose up -d`
 
+Beachten Sie für ein lokales Deployment die Anpassung der in den env-Variablen eingetragenen Adressen zur Kommunikation der Container untereinander. (Normalerweise kommunizieren die Services über ihre öffentlich erreichbaren Internet-Addressen, um die Kommunikation über https zu verschlüsseln. Dies ist beim lokalen Deployment nicht möglich. Aus diesem Grund kann die Kommunikation nur über http erfolgen, weshalb es zu Einschränkungen seitens des genutzten Browsers kommen kann.)
+
 ## Verwendete Frameworks und Dienste
 
 Diese Anwendung nutzt verschiedene Frameworks und Dienste, um die Funktionalität zu implementieren und einen reibungslosen Betrieb sicherzustellen. Hier sind die Komponenten, die in diesem Projekt verwendet werden:
 
 ### Frameworks:
 
-- [**PureCSS:**](https://github.com/pure-css) Eine Reihe von CSS-Modulen, die für das Erstellen von ansprechenden, reaktionsschnellen Webseiten verwendet werden können.
-  - Lizenz: BSD License, © 2013 Yahoo! Inc.
+1. [**PureCSS**](https://github.com/pure-css)
+- Lizenz: BSD License, © 2013 Yahoo! Inc.
 
-- [**Leaflet:**](https://github.com/Leaflet) Ein Open-Source-JavaScript-Bibliothek zur Erstellung interaktiver Karten.
-  - Lizenz: BSD 2-Clause License
-            © 2010-2024, Volodymyr Agafonkin
-            © 2010-2011, CloudMade
-            All rights reserved.
+2. [**Leaflet**](https://github.com/Leaflet)
+- Lizenz: BSD 2-Clause License  
+         © 2010-2024, Volodymyr Agafonkin  
+         © 2010-2011, CloudMade  
+         All rights reserved.
 
-- [**FastAPI:**](https://github.com/tiangolo/fastapi/) Ein schnelles (High-performance), modernes Web-Framework für Python.
-  - Lizenz: The MIT License (MIT)
-            © 2018 Sebastián Ramírez
+3. [**FastAPI**](https://github.com/tiangolo/fastapi/)
+- Lizenz: The MIT License (MIT)  
+         © 2018 Sebastián Ramírez
 
-- [**Express:**](https://github.com/expressjs/express) Ein beliebtes Webanwendungs-Framework für Node.js.
-  - Lizenz: The MIT License (MIT)
-            © 2009-2014 TJ Holowaychuk <tj@vision-media.ca>
-            © 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>
-            © 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
+4. [**Express**](https://github.com/expressjs/express) 
+- Lizenz: The MIT License (MIT)  
+         © 2009-2014 TJ Holowaychuk <tj@vision-media.ca>  
+         © 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>  
+         © 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>  
 
 ### Dienste:
 
-- **Scorpio Context Broker:** Ein Kontextbroker, der im Backend verwendet wird, um Daten zu verarbeiten und das Model des MVC zu unterstützen.
-  - Website: [Link zur Scorpio Context Broker Website](https://github.com/ScorpioBroker/)
-  - Lizenz: BSD 3-Clause License
-            © 2021, NEC
-            All rights reserved.
+5. **Scorpio Context Broker** 
+- Website: [Link zur Scorpio Context Broker Website](https://github.com/ScorpioBroker/)
+- Lizenz: BSD 3-Clause License  
+         © 2021, NEC  
+         All rights reserved.
 
-Bitte beachten Sie die Lizenzbedingungen jedes Frameworks und Dienstes für weitere Informationen zur Verwendung und Verteilung.
+Bitte beachten Sie die Lizenzbedingungen jedes Frameworks und Dienstes für weitere Informationen zur Verwendung und Distribution.
 
 
 ### Lizenz
