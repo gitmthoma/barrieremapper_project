@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // Get environment variables
-    var controllerAPI = "https://pfaffnground.ddns.net/controller_api";
+    var controllerAPI = "https://pfaffnground.ddns.net/controller_api"; // For local deployment use: "http://localhost:8001/controller_api"
 
     // Set the default sort value
     document.getElementById('sort').value = 'date';

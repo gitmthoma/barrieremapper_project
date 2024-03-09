@@ -7,3 +7,11 @@ services:
     restart: always
     ports:
       - 81:3000
+    networks:
+      - barrieremapper_network
+
+networks:
+  barrieremapper_network:
+    driver: bridge
+    name: barrieremapper_network
+    external: true

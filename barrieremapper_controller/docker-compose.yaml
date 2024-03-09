@@ -16,4 +16,12 @@ services:
     ports:
       - "8001:8000"
     environment:
-      - SCORPIO_URL=http://192.168.2.180:9090
+      - SCORPIO_URL=http://scorpio:9090
+    networks:
+      - barrieremapper_network
+
+networks:
+  barrieremapper_network:
+    driver: bridge
+    name: barrieremapper_network
+    external: true

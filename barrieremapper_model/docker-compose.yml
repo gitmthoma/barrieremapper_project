@@ -9,6 +9,8 @@ services:
     restart: always
     logging:
       driver: none
+    networks:
+      - barrieremapper_network
 
   kafka:
     image: bitnami/kafka
@@ -29,6 +31,8 @@ services:
       - zookeeper
     logging:
       driver: none
+    networks:
+      - barrieremapper_network
   postgres:
     image: postgis/postgis
     container_name: model_postgres_container
@@ -43,6 +47,8 @@ services:
       driver: none
     volumes:
       - ./data/postgresql:/var/lib/postgresql/data
+    networks:
+      - barrieremapper_network
   scorpio:
     image: scorpiobroker/all-in-one-runner:java-kafka-4.1.6
     container_name: model_scorpio_container
@@ -54,3 +60,11 @@ services:
     depends_on:
       - postgres
       - kafka
+    networks:
+      - barrieremapper_network
+
+networks:
+  barrieremapper_network:
+    driver: bridge
+    name: barrieremapper_network
+    external: true
