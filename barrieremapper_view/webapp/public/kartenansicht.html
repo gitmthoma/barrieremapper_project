@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BarriereMapper - Barriere</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
+    <script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
+
+</head>
+
+
+<body>
+
+    <header>
+        <div class="header-menu">
+            <button id="backButton" class="pure-button" onclick="goBack()"><i class="fa fa-arrow-left"></i>
+                Zurück</button>
+            <h1 class="header-title">Kartenansicht</h1>
+        </div>
+        <div class="dropdown">
+            <button class="pure-button dropbtn"><i class="fa fa-bars"></i> Menü</button>
+            <div class="dropdown-content">
+                <a href="barriere.html">Barriere</a>
+                <a href="kartenansicht.html">Kartenansicht</a>
+                <a href="listenansicht.html">Listenansicht</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-4-5">
+                <p>
+                <div id="map"></div>
+                </p>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-4-5">
+                <p>
+                <div id="closest-entities" style="overflow-x: auto; display: flex;"></div>
+                </p>
+            </div>
+    </main>
+
+    <footer class="pure-g">
+        <button class="pure-button"><i class="fa fa-github"></i><a
+                href="https://github.com/gitmthoma/barriermapper_project">BarriereMapper</a></button>
+    </footer>
+
+    <script src="javascripts/main_script.js"></script>
+    <script src="javascripts/getBarriers-map_script.js"></script>
+
+</body>
+
+</html>

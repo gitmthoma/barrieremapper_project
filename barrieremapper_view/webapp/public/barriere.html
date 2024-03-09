@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BarriereMapper - Barriere</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-menu">
+            <button id="backButton" class="pure-button" onclick="goBack()"><i class="fa fa-arrow-left"></i>
+                Zurück</button>
+            <h1 class="header-title">Barriere</h1>
+        </div>
+        <div class="dropdown">
+            <button class="pure-button dropbtn"><i class="fa fa-bars"></i> Menü</button>
+            <div class="dropdown-content">
+                <a href="barriere.html">Barriere</a>
+                <a href="kartenansicht.html">Kartenansicht</a>
+                <a href="listenansicht.html">Listenansicht</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pure-g">
+        <div class="pure-u-1 pure-u-md-4-5">
+            <p>
+            <div id="map"></div>
+            </p>
+        </div>
+        <div class="pure-u-1">
+            <form class="pure-form" id="barrierForm">
+                <fieldset class="pure-group">
+                    <input type="text" id="usernameInput" class="pure-input-1"
+                        placeholder="Name des Users (optional)" />
+                    <input type="text" id="barrierLabelingInput" class="pure-input-1"
+                        placeholder="Bezeichnung für die Barriere (optional)" />
+                    <textarea class="pure-input-1" id="barrierDescriptionInput"
+                        placeholder="Beschreibe die Barriere (erforderlich)" required=""></textarea>
+                    <div class="pure-control-group">
+                        <label for="temporaryBarrier" class="pure-checkbox">
+                            <input id="temporaryBarrier" type="checkbox"> Temporäre Barriere?
+                        </label>
+                    </div>
+                    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Barriere
+                        erfassen</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer class="pure-g">
+        <div class="" pure-u-1-5><button class="pure-button"><i class="fa fa-github"></i><a
+                    href="https://github.com/gitmthoma/barriermapper_project">BarriereMapper</a></button></div>
+    </footer>
+
+    <script src="javascripts/addBarrier-map_script.js"></script>
+    <script src="javascripts/forms_script.js"></script>
+    <script src="javascripts/main_script.js"></script>
+
+
+</body>
+
+</html>

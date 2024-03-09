@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  zookeeper:
+    image: zookeeper
+    container_name: model_zookeeper_container
+    ports:
+      - "2181"
+    restart: always
+    logging:
+      driver: none
+
+  kafka:
+    image: bitnami/kafka
+    container_name: model_kafka_container
+    ports:
+      - "9092"
+    restart: always
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_PORT: 9092
+      KAFKA_LOG_RETENTION_MS: 10000
+      KAFKA_LOG_RETENTION_CHECK_INTERVAL_MS: 5000
+      ALLOW_PLAINTEXT_LISTENER: "yes"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - zookeeper
+    logging:
+      driver: none
+  postgres:
+    image: postgis/postgis
+    container_name: model_postgres_container
+    ports:
+      - "5432"
+    restart: always
+    environment:
+      POSTGRES_USER: ngb
+      POSTGRES_PASSWORD: ngb
+      POSTGRES_DB: ngb
+    logging:
+      driver: none
+    volumes:
+      - ./data/postgresql:/var/lib/postgresql/data
+  scorpio:
+    image: scorpiobroker/all-in-one-runner:java-kafka-4.1.6
+    container_name: model_scorpio_container
+    environment:
+      SCORPIO_GATEWAYURL: "http:"
+    ports:
+      - "9090:9090"
+    restart: always
+    depends_on:
+      - postgres
+      - kafka

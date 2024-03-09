@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  controller_api:
+    container_name: controller_api_container
+    build: ./src
+    command:
+      [
+        sh,
+        -c,
+        "cd /usr/src/ && ls -la && uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+      ]
+    restart: always
+    volumes:
+      - ./src/:/usr/src/
+    ports:
+      - "8001:8000"
+    environment:
+      - SCORPIO_URL=http://192.168.2.180:9090

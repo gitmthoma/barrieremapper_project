@@ -1,0 +1,9 @@
+version: '2'
+services:
+  barrieremapper_service:
+    build: .
+    image: barrieremapper_view_image
+    container_name: barrieremapper_view_container
+    restart: always
+    ports:
+      - 81:3000

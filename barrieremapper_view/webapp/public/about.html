@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BarriereMapper - Barriere</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-menu">
+            <button id="backButton" class="pure-button" onclick="goBack()"><i class="fa fa-arrow-left"></i>
+                Zurück</button>
+            <h1 class="header-title">About</h1>
+        </div>
+        <div class="dropdown">
+            <button class="pure-button"><i class="fa fa-bars"></i> Menü</button>
+            <div class="dropdown-content">
+                <a href="barriere.html">Barriere</a>
+                <a href="kartenansicht.html">Kartenansicht</a>
+                <a href="listenansicht.html">Listenansicht</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-3">
+                <h2>Über BarriereMapper</h2>
+                <p>Der BarriereMapper ermöglicht es, Barrieren auf einer Karte zu markieren. Die erfassten Barrieren
+                    können als Karte oder Liste dargestellt werden. Anhand von Beschreibungstexten zu den Barrieren kann
+                    ein
+                    verbessertes
+                    Verständnis der dokumentierten Barrieren entwickelt werden, um darauf geeignete Strategien für die
+                    Zugänglichkeit im Raum Heidelberg aufzubauen. Die hier vorliegende prototypische Webanwendung ist im
+                    Rahmen einer Masterarbeit im hochschulübergreifenden Studiengang <a
+                        href="https://www.digitale-methodik.uni-mainz.de/"><i class="fa fa-arrow-right"></i>Digitale
+                        Methodik in den Geistes- und
+                        Kulturwissen</a> entstanden. Weitere Informationenen zu den Inhalten dieser Masterarbeit finden
+                    Sie via <a
+                        href="https://barrieremapper-project-mthoma-3bc62844e10abc09893286bb94ec3b485.pages.gitlab.rlp.net/"><i
+                            class="fa fa-arrow-right"></i>GitLab Pages</a>.</p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <h2>Anleitung</h2>
+                <ol>
+                    <li><strong>Erster Schritt: Barriere erfassen</strong><br>Um eine Barriere zu erfassen, wählen Sie
+                        im
+                        Menü den Reiter Barriere aus. Anschließend werden Sie über eine Meldung gebeten, Ihren Standort
+                        zur Markierung der
+                        Barriere freizugeben oder eine manuelle Markierung per Klick zu setzen. Die erfasste Barriere
+                        können Sie dann benennen, beschreiben und optional Ihren Usernamen angeben. Ist der Eintrag
+                        Ihrer Barriere erfolgt, erhalten Sie eine Rückmeldung.</li>
+                    <li><strong>Zweiter Schritt: Kartenansicht nutzen</strong><br>Wollen Sie eine Karte aller erfassten
+                        Barrieren angezeigt bekommen, wählen Sie im Menü den Reiter Kartenansicht aus. Dort wird Ihnen
+                        eine Karte der Stadt Heidelberg mit allen erfassten Barrieren angezeigt.</li>
+                    <li><strong>Dritter Schritt: Listenansicht nutzen</strong><br>Wollen Sie eine Liste aller erfassten
+                        Barrieren angezeigt bekommen, wählen Sie im Menü den Reiter Listenansicht aus. Dort wird Ihnen
+                        eine Liste mit allen erfassten Barrieren angezeigt. Diese Liste können Sie sortieren, filtern
+                        oder beispielsweise nach Ihrem Username durchsuchen.</li>
+                </ol>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <h2>Videoanleitung</h2>
+                <video controls>
+                    <source src="videos/videoanleitung.mp4" type="video/mp4">
+                    Ihr Browser unterstützt das Video-Tag nicht.
+                </video>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pure-g">
+        <button class="pure-button"><i class="fa fa-github"></i><a
+                href="https://github.com/gitmthoma/barriermapper_project">BarriereMapper</a></button>
+    </footer>
+
+    <script src="javascripts/main_script.js"></script>
+
+</body>
+
+</html>
