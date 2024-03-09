@@ -23,7 +23,7 @@ Diese Anwendung nutzt verschiedene Frameworks und Dienste, um die Funktionalitä
 
 ### Frameworks:
 
-- [**PureCSS**](https://github.com/pure-css) 
+- [**PureCSS**](https://github.com/pure-css) /n
   Lizenz: BSD License, © 2013 Yahoo! Inc.
 
 - [**Leaflet**](https://github.com/Leaflet) 
