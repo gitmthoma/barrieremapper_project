@@ -17,7 +17,7 @@ Die Anwendung ist dockerisiert und kann daher leicht auf jedem System via Docker
 
 `docker network create -d bridge barrieremapper_network`
 
-2. Wählen Sie unter barrieremapper_view in den Dateien forms_script.js, getBarriers-list_script.js und getBarriers-map_script.js die Alternative für das lokale Deployment aus, welche in den entsprechenden Zeilen als Kommentar hinterlegt ist.
+2. Wählen Sie unter barrieremapper_view in den Dateien **forms_script.js**, **getBarriers-list_script.js** und **getBarriers-map_script.js** die Alternative für das lokale Deployment aus, welche in den entsprechenden Zeilen als Kommentar hinterlegt ist.
 
 3. Navigieren Sie in die Verzeichnisse, in denen sich die **docker-compose.yml**-Dateien befinden, und führen Sie über die Kommandozeile den folgenden Befehl aus. 
 
