@@ -13,17 +13,17 @@ Die Anwendung besteht aus drei Hauptkomponenten, die gemäß dem MVC-Muster jewe
 ### Docker
 Die Anwendung ist dockerisiert und kann daher leicht auf jedem System via Docker installiert und ausgeführt werden. Um die Anwendung zu starten, 
 
-1. erstellen Sie ein Docker-Netzwerk als Kommunikationslayer für die nachfolgenden Container.
+1. Erstellen Sie ein Docker-Netzwerk als Kommunikationslayer für die nachfolgenden Container.
 
 `docker network create -d bridge barrieremapper_network`
 
-2. wählen sie unter barrieremapper_view in den Dateien forms_script.js, getBarriers-list_script.js und getBarriers-map_script.js die Alternative für das lokale Deployment aus, welche in den entsprechenden Zeilen als Kommentar hinterlegt ist.
+2. Wählen sie unter barrieremapper_view in den Dateien forms_script.js, getBarriers-list_script.js und getBarriers-map_script.js die Alternative für das lokale Deployment aus, welche in den entsprechenden Zeilen als Kommentar hinterlegt ist.
 
-3. navigieren Sie in die Verzeichnisse, in denen sich die **docker-compose.yml**-Dateien befinden, und führen Sie über die Kommandozeile den folgenden Befehl aus. 
+3. Navigieren Sie in die Verzeichnisse, in denen sich die **docker-compose.yml**-Dateien befinden, und führen Sie über die Kommandozeile den folgenden Befehl aus. 
 
 `docker-compose up -d`
 
-4. besuchen Sie die BarriereMapper-Webanwendung über http://localhost:81 
+4. Besuchen Sie die BarriereMapper-Webanwendung über http://localhost:81 
 
 
 ## Verwendete Frameworks und Dienste
