@@ -54,7 +54,7 @@ Diese Anwendung nutzt verschiedene Frameworks und Dienste, um die Funktionalitä
 ### Dienste:
 
 5. **Scorpio Context Broker** 
-- Website: [Link zur Scorpio Context Broker Website](https://github.com/ScorpioBroker/)
+- GitHub: [Scorpio Context Broker](https://github.com/ScorpioBroker/)
 - Lizenz: BSD 3-Clause License  
          © 2021, NEC  
          All rights reserved.
