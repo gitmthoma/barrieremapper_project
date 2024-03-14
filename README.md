@@ -11,7 +11,7 @@ Die Anwendung besteht aus drei Hauptkomponenten, die gemäß dem MVC-Muster jewe
 **barrieremapper_model**: Dieses Verzeichnis enthält die Datenmodelle und die Datenbankinteraktionen der Anwendung.
 
 ### Docker
-Die Anwendung ist dockerisiert und kann daher leicht auf jedem System via Docker installiert und ausgeführt werden. Um die Anwendung zu starten, 
+Die Anwendung ist dockerisiert und kann daher leicht auf jedem System via Docker installiert und ausgeführt werden. Um die Anwendung zu starten,
 
 1. erstellen Sie ein Docker-Netzwerk als Kommunikationslayer für die nachfolgenden Container.
 
