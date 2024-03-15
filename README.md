@@ -11,19 +11,20 @@ Die Anwendung besteht aus drei Hauptkomponenten, die gemäß dem MVC-Muster jewe
 **barrieremapper_model**: Dieses Verzeichnis enthält die Datenmodelle und die Datenbankinteraktionen der Anwendung.
 
 ### Docker
-Die Anwendung ist dockerisiert und kann daher leicht auf jedem System via Docker installiert und ausgeführt werden. Um die Anwendung zu starten,
 
-1. erstellen Sie ein Docker-Netzwerk als Kommunikationslayer für die nachfolgenden Container.
+Die Anwendung ist dockerisiert und kann daher leicht auf jedem System via Docker installiert und ausgeführt werden. Um die Anwendung zu starten, führen Sie folgende Schritte durch:
+
+1. Erstellen Sie ein Docker-Netzwerk als Kommunikationslayer für die nachfolgenden Container.
 
 `docker network create -d bridge barrieremapper_network`
 
-2. wählen sie unter barrieremapper_view in den Dateien forms_script.js, getBarriers-list_script.js und getBarriers-map_script.js die Alternative für das lokale Deployment aus, welche in den entsprechenden Zeilen als Kommentar hinterlegt ist.
+2. Wählen Sie unter barrieremapper_view in den Dateien **forms_script.js**, **getBarriers-list_script.js** und **getBarriers-map_script.js** die Alternative für das lokale Deployment aus, welche in den entsprechenden Zeilen als Kommentar hinterlegt ist.
 
-3. navigieren Sie in die Verzeichnisse, in denen sich die **docker-compose.yml**-Dateien befinden, und führen Sie über die Kommandozeile den folgenden Befehl aus. 
+3. Navigieren Sie in die Verzeichnisse, in denen sich die **docker-compose.yml**-Dateien befinden, und führen Sie über die Kommandozeile den folgenden Befehl aus. 
 
 `docker-compose up -d`
 
-4. besuchen Sie die BarriereMapper-Webanwendung über http://localhost:81 
+4. Besuchen Sie die BarriereMapper-Webanwendung über http://localhost:81 
 
 
 ## Verwendete Frameworks und Dienste
@@ -54,7 +55,7 @@ Diese Anwendung nutzt verschiedene Frameworks und Dienste, um die Funktionalitä
 ### Dienste:
 
 5. **Scorpio Context Broker** 
-- Website: [Link zur Scorpio Context Broker Website](https://github.com/ScorpioBroker/)
+- GitHub: [Scorpio Context Broker](https://github.com/ScorpioBroker/)
 - Lizenz: BSD 3-Clause License  
          © 2021, NEC  
          All rights reserved.
